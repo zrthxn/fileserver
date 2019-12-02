@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Upload Files</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Upload File to ZXAWS</h2>
+    <form action="http://localhost:2400/_upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="fileupload">
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 2em auto;
+      text-align: center;
+      padding: 2em 1em;
+      border: 1px solid #1c1c1c40;
+      border-radius: 10px;
+    }
+
+    .container * {
+      width: fit-content;
+      margin: 0.5em auto;
+    }
+  </style>
+</body>
+</html>
